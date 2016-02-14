@@ -45,12 +45,12 @@ public class Pinguin : MonoBehaviour {
 			transform.localScale = new Vector3 (-1, 1, 1);
 		}
 
-		if (upDir > 0.3f && isGrounded) {
+		if (upDir > 0.03f && isGrounded) {
 			anim.SetTrigger ("Jumping");
 			lastState = "Jumping";
 			isGrounded = false;
 			var velocity = rb.velocity;
-			velocity.y = 20f;
+			velocity.y = 5f;
 			rb.velocity = velocity;
 		}
 	}
@@ -61,4 +61,5 @@ public class Pinguin : MonoBehaviour {
 			Debug.Log ("Hit the ground");
 		}
 	}
+
 }
