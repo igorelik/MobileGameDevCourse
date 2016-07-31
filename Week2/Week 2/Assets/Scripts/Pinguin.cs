@@ -6,6 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Pinguin : MonoBehaviour {
 
 	public float movementSpeed =5;
+	public float jumpSpeed =8;
 
 	Rigidbody2D rb;
 	Animator anim;
@@ -61,5 +62,7 @@ public class Pinguin : MonoBehaviour {
 			Debug.Log ("Hit the ground");
 		}
 	}
+
+
 
 }
